@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rajanya Maity - Web Developer & Google Student Ambassador">
+    <title>Rajanya Maity | Developer System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+    <!-- Interactive Boot Screen -->
+    <div id="boot-screen">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title">system_boot sequence</span>
+            </div>
+            <div class="terminal-body">
+                <p id="typewriter-text"></p>
+                <button id="enter-btn" class="hidden">[ENTER] TO INITIALIZE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Portfolio -->
+    <div id="main-portfolio" class="hidden">
+        
+        <!-- The Falling 0 & 1 Binary Canvas -->
+        <canvas id="binary-canvas"></canvas>
+
+        <!-- Animated Background Grid -->
+        <div class="cyber-grid"></div>
+
+        <header class="site-header">
+            <nav class="nav-container" aria-label="Main Navigation">
+                <div class="logo-code">&lt;RM/&gt;</div> 
+                <ul id="primary-navigation" class="nav-links" role="list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero">
+                <div class="hero-content system-box tilt-card">
+                    <img src="RajanyaPhoto.jpeg" alt="Rajanya Maity" class="profile-photo">
+                    <p class="greeting">Authentication Successful.</p>
+                    <h1 class="name">Rajanya Maity.</h1>
+                    <h2 class="tagline">Engineer. Developer. Innovator.</h2>
+                    <p class="description">
+                        B.Tech undergraduate in Information Technology (2024-2028)[cite: 3]. Passionate coder with a strong interest in Web Development and a drive to build real-world, impactful applications[cite: 3].
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">Execute Projects</a>
+                        <a href="#contact" class="btn btn-outline">Communicate</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detailed Achievements Section -->
+            <section id="achievements" class="reveal">
+                <h2 class="section-title">Milestones & Certifications</h2>
+                <div class="grid-2-col">
+                    <div class="system-box tilt-card border-glow">
+                        <h3>🏆 Global & National Recognition</h3>
+                        <ul class="detailed-list">
+                            <li>
+                                <strong>Google Student Ambassador (Gemini) 2026</strong>
+                                <p>Selected by Google to represent the Gemini program, driving AI awareness and developer community growth[cite: 3].</p>
+                            </li>
+                            <li>
+                                <strong>Oracle Cloud Infrastructure 2025</strong>
+                                <p>Earned the credential of Certified Generative AI Professional[cite: 3].</p>
+                            </li>
+                            <li>
+                                <strong>Pragati: Path to Future (Cohort 9)</strong>
+                                <p>Selected for this exclusive program by Infosys Springboard[cite: 3].</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="system-box tilt-card border-glow">
+                        <h3>⚔️ Hackathons & Internships</h3>
+                        <ul class="detailed-list">
+                            <li>
+                                <strong>Virtual Academic Internship (IBM)</strong>
+                                <p>Completed training in Gen AI & Cloud Computing with IBM SkillsBuild & AICTE[cite: 3].</p>
+                            </li>
+                            <li>
+                                <strong>Multiple Hackathon Finalist</strong>
+                                <p>Finalist at Synchronicity S2 (Jadavpur University) for ElderGuard, Status Code 2 (IIIT Kalyani), and Geekathon 2025[cite: 3].</p>
+                            </li>
+                            <li>
+                                <strong>GDG 30 Days DSA Challenge</strong>
+                                <p>Emerged as the Winner and served as a Core Organizer for GDG On Campus GCELT[cite: 3].</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- All Projects Section -->
+            <section id="projects" class="reveal">
+                <h2 class="section-title">Project Database</h2>
+                
+                <!-- Highlighted Project -->
+                <article class="project-card system-box tilt-card featured-project">
+                    <div class="featured-badge">SYSTEM.ROOT // AWARD WINNER</div>
+                    <h3>ElderGuard: Anti-Fraud Platform</h3>
+                    <p>A proactive mobile security application designed to protect elderly users from digital fraud by identifying malicious APKs and phishing links[cite: 3].</p>
+                    <ul class="detailed-list mt-2">
+                        <li><strong>Engineered "Share to Scan":</strong> Calculates file hashes and parses URLs against VirusTotal and Google Safe Browsing APIs[cite: 3].</li>
+                        <li><strong>Tech SOS Ecosystem:</strong> Dispatches instant SMS and push notifications to trusted family upon detecting threats[cite: 3].</li>
+                    </ul>
+                    <div class="tech-stack"><span>React Native</span><span>Node.js</span><span>REST APIs</span></div>
+                </article>
+
+                <!-- Grid of all other projects -->
+                <div class="project-grid mt-4">
+                    <article class="project-card system-box tilt-card">
+                        <h3>Indian Art Heritage</h3>
+                        <p>Interactive platform to explore ancient Indian art. Features posting, buying, selling, user feedback, and a creative brush game[cite: 3].</p>
+                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </article>
+
+                    <article class="project-card system-box tilt-card">
+                        <h3>HH-GOA Passes</h3>
+                        <p>Full-stack web app to generate, render, and share custom vintage-style digital ID passes for the HH Goa 2026 Residency[cite: 2].</p>
+                        <div class="tech-stack"><span>HTML</span><span>Full-Stack</span></div>
+                    </article>
+
+                    <article class="project-card system-box tilt-card">
+                        <h3>Drug Discovery via Gen AI</h3>
+                        <p>Research project utilizing deep learning to predict potential drug compounds and accelerate the drug discovery process[cite: 2].</p>
+                        <div class="tech-stack"><span>Python</span><span>Deep Learning</span></div>
+                    </article>
+
+                    <article class="project-card system-box tilt-card">
+                        <h3>Untold Story Telling</h3>
+                        <p>Platform allowing users to safely share untold stories and creative narratives, with a strong focus on frontend usability[cite: 3].</p>
+                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </article>
+
+                    <article class="project-card system-box tilt-card">
+                        <h3>Voting-Contract DApp</h3>
+                        <p>A simple Solidity smart contract deployed for a voting system DApp on the Flow EVM testnet[cite: 2].</p>
+                        <div class="tech-stack"><span>Solidity</span><span>Blockchain</span></div>
+                    </article>
+
+                    <article class="project-card system-box tilt-card">
+                        <h3>Analog Clock</h3>
+                        <p>Real-time analog clock with smooth hand movement using JS Date objects and advanced CSS transformations[cite: 3].</p>
+                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </article>
+
+                    <article class="project-card system-box tilt-card">
+                        <h3>Fun Facts in Tech</h3>
+                        <p>Responsive frontend project showcasing educational tech facts with a highly readable, user-friendly layout[cite: 3].</p>
+                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </article>
+
+                    <article class="project-card system-box tilt-card">
+                        <h3>Simple Calculator</h3>
+                        <p>Web-based calculator for standard arithmetic operations featuring responsive UI design and robust input validation[cite: 3].</p>
+                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Expanded Contact Section -->
+            <section id="contact" class="reveal">
+                <h2 class="section-title">Establish Connection</h2>
+                <div class="system-box tilt-card contact-terminal">
+                    <p class="terminal-text">> Initiating contact protocols...</p>
+                    <p class="terminal-text">> Status: <span style="color: #00ffcc;">Online and ready for new opportunities.</span></p>
+                    
+                    <div class="contact-grid mt-4">
+                        <div class="contact-item">
+                            <span class="label">EMAIL_ID:</span>
+                            <a href="mailto:maityrajanya2004@gmail.com" class="value">maityrajanya2004@gmail.com[cite: 3]</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">PHONE_SECURE:</span>
+                            <span class="value">+91 7719288782[cite: 3]</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">LINKEDIN_NODE:</span>
+                            <a href="https://linkedin.com/in/rajanyamaity/" target="_blank" class="value">linkedin.com/in/rajanyamaity/[cite: 3]</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">GITHUB_REPO:</span>
+                            <a href="https://github.com/rajanyamaity" target="_blank" class="value">github.com/rajanyamaity[cite: 3]</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">TWITTER / X:</span>
+                            <a href="https://x.com/maity_rajanya" target="_blank" class="value">x.com/maity_rajanya</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
